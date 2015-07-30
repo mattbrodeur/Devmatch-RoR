@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    Stripe.setPublishableKey($('meta[name="stripe-key"]').attr(content));
-    // Watch for form submission
+    Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
+    // Watch for form submission:
     $("#form-submit-btn").click(function(event) {
         event.preventDefault();
         $('input[type=submit]').prop('disabled', true);
